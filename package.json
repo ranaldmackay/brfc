@@ -1,0 +1,24 @@
+{
+  "name": "gulp-local",
+  "version": "1.0.0",
+  "description": "Gulp tasks for local development",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.6.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranaldmackay/brfc.git"
+  },
+  "author": "Ranald",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranaldmackay/brfc/issues"
+  },
+  "homepage": "https://github.com/ranaldmackay/brfc#readme"
+}
