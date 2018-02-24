@@ -5,7 +5,7 @@ backend:
 publish_mode: editorial_workflow
 
 media_folder: "build/images/uploads" # Media files will be stored here for processing prior to build
-public_folder: "images/uploads"
+public_folder: "images/uploads" # Processed images are sent here
 
 collections:
   - name: "news" # Used in routes, e.g., /admin/collections/blog
