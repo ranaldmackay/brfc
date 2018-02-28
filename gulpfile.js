@@ -6,7 +6,7 @@ var responsive = require('gulp-responsive'); // Create responsive images
 // Task for building site for production:
 // Start by processing images
 gulp.task('images', function () {
-  return gulp.src('_build/images/uploads/*.{png,jpg}')
+  return gulp.src('build/images/uploads/*.{png,jpg}')
     .pipe(responsive({
 
       // Resize all post images and ensure jpeg format
