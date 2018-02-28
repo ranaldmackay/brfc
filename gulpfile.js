@@ -48,7 +48,7 @@ gulp.task('images', function () {
     .pipe(gulp.dest('images/uploads'));
 });
 
-gulp.task('build', shell.task(['bundle exec jekyll build']));
+gulp.task('production', shell.task(['bundle exec jekyll build']));
 
 // Task for building site for development:
 // Start by processing images
@@ -99,3 +99,5 @@ gulp.task('serve', shell.task(['bundle exec jekyll serve']));
 
 
 gulp.task('dev', ['images','serve']);
+
+gulp.task('build', ['images','production']);
