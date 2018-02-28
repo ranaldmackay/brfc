@@ -1,7 +1,7 @@
 ---
 layout: news-article
 title: New Management Team
-date: 2016-05-02T13:33:53+01:00
+date: 2016-05-02T12:33:53.000Z
 category: boardroom
 thumbnail: /images/uploads/2016-05-02-new-management-team-med.jpg
 description: Stuart Golabeck is named as manager at Dudgeon Park
