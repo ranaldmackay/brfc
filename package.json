@@ -6,6 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-responsive": "^2.9.0",
     "gulp-shell": "^0.6.5"
   },
   "scripts": {

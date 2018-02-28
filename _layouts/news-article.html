@@ -1,4 +1,20 @@
 ---
 layout: default
 ---
+<h1>Article title - {{ page.title }}</h1>
+
+<img class="feature-image"
+  src="{{ page.thumbnail | remove: '.jpg' }}-large.jpg"
+  alt="{{ page.description }}"
+  srcset="
+  {{ page.thumbnail | remove: '.jpg' }}-large.jpg 768w,
+  {{ page.thumbnail | remove: '.jpg' }}-med.jpg 380w,
+  {{ page.thumbnail | remove: '.jpg' }}-small.jpg 425w"
+sizes="
+  (min-width: 31.25em) 50vw, (min-width: 63.50em) 33vw, 85vw">
+
+
 {{ content }}
+
+<p>Posted under {{ page.category }} news</p>
+<p>Published on {{ page.date }}</p>
