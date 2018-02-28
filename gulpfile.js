@@ -50,54 +50,10 @@ gulp.task('images', function () {
 
 gulp.task('production', shell.task(['bundle exec jekyll build']));
 
-// Task for building site for development:
-// Start by processing images
-gulp.task('images', function () {
-  return gulp.src('_build/images/uploads/*.{png,jpg}')
-    .pipe(responsive({
+gulp.task('build', ['images','production']);
 
-      // Resize all post images and ensure jpeg format
-      '*': [{
-        width: 425,
-        quality: 80,
-        progressive: true,
-        withoutEnlargement: false,
-        errorOnUnusedConfig: false,
-        withMetadata: false,
-        rename: { suffix: '-small' },
-      }, {
-        width: 520,
-        quality: 70,
-        progressive: true,
-        withoutEnlargement: false,
-        errorOnUnusedConfig: false,
-        withMetadata: false,
-        rename: { suffix: '-med' },
-      }, {
-        width: 768,
-        quality: 70,
-        progressive: true,
-        withoutEnlargement: false,
-        errorOnUnusedConfig: false,
-        withMetadata: false,
-        rename: { suffix: '-large' },
-      }, {
-        width: 90,
-        height: 90,
-        quality: 90,
-        progressive: true,
-        withoutEnlargement: false,
-        errorOnUnusedConfig: false,
-        withMetadata: false,
-        rename: { suffix: '-thumbnail' },
-      }],
-    }))
-    .pipe(gulp.dest('images/uploads'));
-});
+// Task for building site for development:
 
 gulp.task('serve', shell.task(['bundle exec jekyll serve']));
 
-
 gulp.task('dev', ['images','serve']);
-
-gulp.task('build', ['images','production']);
