@@ -13,3 +13,11 @@ layout: default
 </li>
 {% endfor %}
 </ul>
+
+<ul>
+{% for preview in site.previews %}
+<li>
+  <a href="{{ preview.url }}">{{ preview.title }}</a>
+</li>
+{% endfor %}
+</ul>
