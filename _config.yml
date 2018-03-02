@@ -32,6 +32,8 @@ plugins:
 
 permalink: /:year/:month/:day/:title/
 
+exclude: [build, package.json, node_modules, Gemfile, Gemfile.lock, README.md, gulpfile.js]
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
