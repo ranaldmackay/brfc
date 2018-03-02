@@ -31,8 +31,9 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "news-article"}
       - {label: "Headline", name: "headline", widget: "string"}
       - {label: "Match Date", name: "date", widget: "datetime"}
-      - {label: "Home Team", name: "home-team", widget: "list", options: ["Brora Rangers", "Buckie Thistle", "Clachnacuddin", "Cove Rangers", "Deveronvale", ""]}
+      - {label: "Home Team", name: "home-team", widget: "select", options: ["Brora Rangers", "Buckie Thistle", "Clachnacuddin", "Cove Rangers", "Deveronvale", "Formartine Utd", "Forres Mechanics", "Fort William", "Fraserburgh", "Huntly", "Inverurie Loco Works", "Keith", "Lossiemouth", "Nairn County", "Rothes", "Strathspey Thistle", "Turriff Utd", "Wick Academy"]}
+      - {label: "Away Team", name: "away-team", widget: "select", options: ["Brora Rangers", "Buckie Thistle", "Clachnacuddin", "Cove Rangers", "Deveronvale", "Formartine Utd", "Forres Mechanics", "Fort William", "Fraserburgh", "Huntly", "Inverurie Loco Works", "Keith", "Lossiemouth", "Nairn County", "Rothes", "Strathspey Thistle", "Turriff Utd", "Wick Academy"]}
       - {label: "Competition", name: "competition", widget: "select", options: ["League", "Scottish Cup", "League Cup", "North of Scotland Cup", "Challenge Cup", "Friendly"], default: "League"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image", required: "false"}
+      - {label: "Social Media Image", name: "thumbnail", widget: "image", required: "false"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
