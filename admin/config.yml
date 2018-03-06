@@ -18,7 +18,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Category", name: "category", widget: "select", options: ["boardroom", "chairmans-chat", "event", "match", "squad"]}
-      - {label: "Featured Image", name: "thumbnail", widget: "image", required: "false"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 
@@ -32,8 +32,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Match Date", name: "match-date", widget: "datetime"}
       - {label: "Home Team", name: "home-team", widget: "string"}
-      - {label: "Home Score", name: "home-score", widget: "string", required: "false"}
+      - {label: "Home Score", name: "home-score", widget: "string", required: false}
       - {label: "Away Team", name: "away-team", widget: "string"}
-      - {label: "Away Score", name: "away-score", widget: "string", required: "false"}
+      - {label: "Away Score", name: "away-score", widget: "string", required: false}
       - {label: "Description", name: "description", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown", required: "false"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
