@@ -22,6 +22,10 @@ collections:
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 
+  - name: "clubs"
+    label: "Clubs"
+    file: "_data/clubs.yml"
+
   - name: "fixtures" # Used in routes, e.g., /admin/collections/blog
     label: "Fixtures" # Used in the UI
     folder: "_fixtures/2017" # The path to the folder where the documents are stored
