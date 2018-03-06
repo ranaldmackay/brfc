@@ -22,9 +22,9 @@ collections:
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "previews"
-    label: "Match Previews"
-    folder: "_previews/2017"
+  - name: "fixtures"
+    label: "Fixtures"
+    folder: "_fixtures/2017"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:

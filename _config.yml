@@ -35,7 +35,7 @@ permalink: /:year/:month/:day/:title/
 exclude: [build, package.json, node_modules, Gemfile, Gemfile.lock, README.md, gulpfile.js]
 
 collections:
-  previews:
+  fixtures:
     output: true
     permalink: /:year/:month/:day/:title/
 
