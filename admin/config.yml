@@ -24,7 +24,7 @@ collections:
 
   - name: "clubs"
     label: "Clubs"
-    file: "_data/clubs.yml"
+    folder: "_clubs"
 
   - name: "fixtures" # Used in routes, e.g., /admin/collections/blog
     label: "Fixtures" # Used in the UI

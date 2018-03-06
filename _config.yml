@@ -38,6 +38,8 @@ collections:
   fixtures:
     output: true
     permalink: /:year/:month/:day/:title/
+  clubs:
+    output: false
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
