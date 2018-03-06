@@ -15,9 +15,9 @@ layout: default
 </ul>
 
 <ul>
-{% for preview in site.previews %}
+{% for fixture in site.fixtures %}
 <li>
-  <a href="{{ preview.url }}">{{ preview.title }}</a>
+  <a href="{{ fixture.url }}">{{ fixture.title }}</a>
 </li>
 {% endfor %}
 </ul>
