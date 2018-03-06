@@ -1,11 +1,11 @@
 ---
 layout: news-article
 title: Lossie away league
-match-date: 2017-07-29T15:00:51+01:00
+match-date: 2017-07-29T14:00:51.000Z
 home-team: Lossiemouth
-home-score: '0'
+home-score: ''
 away-team: Brora Rangers
-away-score: '2'
+away-score: ''
 description: Brora Rangers open their 2017-18 League season at Lossiemouth
 ---
-It's the start of a new League Season and we are off to Lossiemouth
+
