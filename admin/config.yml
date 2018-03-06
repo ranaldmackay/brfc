@@ -31,9 +31,14 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "news-article"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Match Date", name: "match-date", widget: "datetime"}
+      - {label: "Status", name: "status", widget: "select", options: ["upcoming", "completed", "postponed", "abandoned"], default: "upcoming" }
       - {label: "Home Team", name: "home-team", widget: "string"}
-      - {label: "Home Score", name: "home-score", widget: "string", required: false}
+      - {label: "Home Score", name: "home-score", widget: "number", valueType: "int", required: false}
+      - {label: "Home Score aet", name: "home-score-aet", widget: "number", valueType: "int", required: false}
+      - {label: "Home Score Pens", name: "home-score-pens", widget: "number", valueType: "int", required: false}
       - {label: "Away Team", name: "away-team", widget: "string"}
-      - {label: "Away Score", name: "away-score", widget: "string", required: false}
+      - {label: "Away Score", name: "away-score", widget: "number", valueType: "int", required: false}
+      - {label: "Away Score aet", name: "away-score-aet", widget: "number", valueType: "int", required: false}
+      - {label: "Away Score Pens", name: "away-score-pens", widget: "number", valueType: "int", required: false}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
