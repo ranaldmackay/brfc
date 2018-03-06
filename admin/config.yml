@@ -21,3 +21,19 @@ collections:
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: "false"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "fixtures" # Used in routes, e.g., /admin/collections/blog
+    label: "Fixtures" # Used in the UI
+    folder: "_fixtures/2017" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "news-article"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Match Date", name: "match-date", widget: "datetime"}
+      - {label: "Home Team", name: "home-team", widget: "string"}
+      - {label: "Home Score", name: "home-score", widget: "string"}
+      - {label: "Away Team", name: "away-team", widget: "string"}
+      - {label: "Away Score", name: "away-score", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
