@@ -47,3 +47,7 @@ collections:
   - name: "clubs"
     label: "Clubs"
     folder: "_clubs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
