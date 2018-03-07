@@ -40,7 +40,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Match Date", name: "match-date", widget: "datetime"}
       - {label: "Status", name: "status", widget: "select", options: ["upcoming", "completed", "postponed", "abandoned"], default: "upcoming" }
-      - {label: "Home Team", name: "home-team", widget: "relation", collection: "clubs", searchFields: "title", valueField: "title"}
+      - {label: "Home Team", name: "home-team", widget: "relation", collection: "clubs", searchFields: ["title"], valueField: "title"}
       - {label: "Home Score", name: "home-score", widget: "number", valueType: "int", required: false}
       - {label: "Home Score aet", name: "home-score-aet", widget: "number", valueType: "int", required: false}
       - {label: "Home Score Pens", name: "home-score-pens", widget: "number", valueType: "int", required: false}
