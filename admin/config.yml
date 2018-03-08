@@ -29,6 +29,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Badge", name: "badge", widget: "image", required: false}
 
   - name: "fixtures" # Used in routes, e.g., /admin/collections/blog
     label: "Fixtures" # Used in the UI
