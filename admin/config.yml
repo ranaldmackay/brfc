@@ -38,7 +38,8 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "news-article"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Match Date", name: "match-date", widget: "datetime"}
+      - {label: "Match Date", name: "match-date", widget: "date"}
+      - {label: "Kick Off", name: "kickoff", widget: "string", default: "15:00"}
       - {label: "Status", name: "status", widget: "select", options: ["upcoming", "completed", "postponed", "abandoned"], default: "upcoming" }
       - {label: "Home Team", name: "home-team", widget: "relation", collection: "clubs", searchFields: ["title"], valueField: "title"}
       - {label: "Home Score", name: "home-score", widget: "number", valueType: "int", required: false}
