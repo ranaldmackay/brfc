@@ -30,7 +30,8 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Badge", name: "badge", widget: "image", required: false}
-
+      - {label: "Ground", name: "ground", widget: "string"}
+      
   - name: "fixtures" # Used in routes, e.g., /admin/collections/blog
     label: "Fixtures" # Used in the UI
     folder: "_fixtures/2017" # The path to the folder where the documents are stored
@@ -43,6 +44,7 @@ collections:
       - {label: "Kick Off", name: "kickoff", widget: "string", default: "15:00"}
       - {label: "Status", name: "status", widget: "select", options: ["Upcoming", "Completed", "Postponed", "Abandoned"], default: "Upcoming" }
       - {label: "Competition", name: "competition", widget: "select", options: ["League", "North of Scotland Cup", "League Cup", "Challenge Cup", "Scottish Cup", "Friendly"], default: "League" }
+      - {label: "Venue - only required if not at home club's ground", name: "venue", widget: "relation", collection: "clubs", searchFields: ["title"], valueField: "ground"}
       - {label: "Home Team", name: "home-team", widget: "relation", collection: "clubs", searchFields: ["title"], valueField: "title"}
       - {label: "Home Score", name: "home-score", widget: "number", valueType: "int", required: false}
       - {label: "Home Score aet", name: "home-score-aet", widget: "number", valueType: "int", required: false}
