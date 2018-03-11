@@ -19,7 +19,7 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Category", name: "category", widget: "select", options: ["boardroom", "chairmans-chat", "event", "match", "squad"]}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
-      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Short summary for Social Media", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "clubs"
@@ -41,7 +41,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Match Date", name: "match-date", widget: "date"}
       - {label: "Kick Off", name: "kickoff", widget: "string", default: "15:00"}
-      - {label: "Status", name: "status", widget: "select", options: ["upcoming", "completed", "postponed", "abandoned"], default: "upcoming" }
+      - {label: "Status", name: "status", widget: "select", options: ["Upcoming", "Completed", "Postponed", "Abandoned"], default: "Upcoming" }
+      - {label: "Competition", name: "competition", widget: "select", options: ["League", "North of Scotland Cup", "League Cup", "Challenge Cup", "Scottish Cup", "Friendly"], default: "League" }
       - {label: "Home Team", name: "home-team", widget: "relation", collection: "clubs", searchFields: ["title"], valueField: "title"}
       - {label: "Home Score", name: "home-score", widget: "number", valueType: "int", required: false}
       - {label: "Home Score aet", name: "home-score-aet", widget: "number", valueType: "int", required: false}
