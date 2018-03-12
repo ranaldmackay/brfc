@@ -1,5 +1,6 @@
 ---
 layout: news-article
+title: Lossiemouth Brora Rangers League
 match-date: '2018-03-12'
 kickoff: '15:00'
 status: Upcoming
