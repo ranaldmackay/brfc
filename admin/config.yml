@@ -22,16 +22,6 @@ collections:
       - {label: "Short summary for Social Media", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "clubs"
-    label: "Clubs"
-    folder: "_clubs"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Badge", name: "badge", widget: "image", required: false}
-      - {label: "Ground", name: "ground", widget: "string"}
-      
   - name: "fixtures" # Used in routes, e.g., /admin/collections/blog
     label: "Fixtures" # Used in the UI
     folder: "_fixtures/2017" # The path to the folder where the documents are stored
@@ -55,3 +45,14 @@ collections:
       - {label: "Away Score Pens", name: "away-score-pens", widget: "number", valueType: "int", required: false}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
+
+
+  - name: "clubs"
+    label: "Clubs"
+    folder: "_clubs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Badge", name: "badge", widget: "image", required: false}
+      - {label: "Ground", name: "ground", widget: "string"}
