@@ -26,10 +26,10 @@ collections:
     label: "Fixtures" # Used in the UI
     folder: "_fixtures/2017" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{home-team}}-{{away-team}}-{{competition}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "news-article"}
-      - {label: "Title", name: "title", widget: "string", default: "{{home-team}} {{away-team}} {{competition}}"}
+      ##- {label: "Title", name: "title", widget: "string", default: "{{home-team}} {{away-team}} {{competition}}"}
       - {label: "Match Date", name: "match-date", widget: "date"}
       - {label: "Kick Off", name: "kickoff", widget: "string", default: "15:00"}
       - {label: "Status", name: "status", widget: "select", options: ["Upcoming", "Completed", "Postponed", "Abandoned"], default: "Upcoming" }
