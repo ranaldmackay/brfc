@@ -29,7 +29,7 @@ collections:
     slug: "{{home-team}}-{{away-team}}-{{competition}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "news-article"}
-      - {label: "Title", name: "title", widget: "string", default: "{{slug}}"}
+      - {label: "Title", name: "title", widget: "string", default: {{slug}}}
       - {label: "Match Date", name: "match-date", widget: "date"}
       - {label: "Kick Off", name: "kickoff", widget: "string", default: "15:00"}
       - {label: "Status", name: "status", widget: "select", options: ["Upcoming", "Completed", "Postponed", "Abandoned"], default: "Upcoming" }
