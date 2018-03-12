@@ -1,7 +1,7 @@
 ---
 layout: news-article
 title: Game 1
-match-date: '2018-03-12'
+match-date: '2017-07-29'
 kickoff: '15:00'
 status: Upcoming
 competition: League
