@@ -38,12 +38,12 @@ collections:
       - {label: "Away Team", name: "away-team", widget: "relation", collection: "clubs", searchFields: ["title"], valueField: "title"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
-      - {label: "Home Score", name: "home-score", widget: "number", valueType: "int", required: false}
-      - {label: "Home Score aet", name: "home-score-aet", widget: "number", valueType: "int", required: false}
-      - {label: "Home Score Pens", name: "home-score-pens", widget: "number", valueType: "int", required: false}
-      - {label: "Away Score", name: "away-score", widget: "number", valueType: "int", required: false}
-      - {label: "Away Score aet", name: "away-score-aet", widget: "number", valueType: "int", required: false}
-      - {label: "Away Score Pens", name: "away-score-pens", widget: "number", valueType: "int", required: false}
+      - {label: "Home Score", name: "home-score", widget: "number", valueType: "float", required: false}
+      - {label: "Home Score aet", name: "home-score-aet", widget: "number", valueType: "float", required: false}
+      - {label: "Home Score Pens", name: "home-score-pens", widget: "number", valueType: "float", required: false}
+      - {label: "Away Score", name: "away-score", widget: "number", valueType: "float", required: false}
+      - {label: "Away Score aet", name: "away-score-aet", widget: "number", valueType: "float", required: false}
+      - {label: "Away Score Pens", name: "away-score-pens", widget: "number", valueType: "float", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
 
   - name: "clubs"
