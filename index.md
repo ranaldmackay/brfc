@@ -24,3 +24,14 @@ layout: default
 </li>
 {% endfor %}
 </ul>
+
+
+<h2>Completed Fixtures</h2>
+<ul>
+{% assign completed = site.fixtures | sort: 'match-date' | where: 'status', 'Completed' %}
+{% for fixture in completed %}
+<li>
+  <a href="{{ fixture.url }}">{{ fixture.match-date }} {{ fixture.title }} {{ fixture.home-score }} - {{ fixture.away-score }}</a>
+</li>
+{% endfor %}
+</ul>
