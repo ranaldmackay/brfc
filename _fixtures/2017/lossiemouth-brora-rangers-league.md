@@ -9,4 +9,3 @@ away-team: Brora Rangers
 title: Lossie Away
 description: This should be removed and built with Jekyll
 ---
-

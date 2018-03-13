@@ -6,6 +6,7 @@ layout: default
 ---
 <h1>This is the home page</h1>
 
+<h2>News Articles</h2>
 <ul>
 {% for post in site.posts %}
 <li>
@@ -14,10 +15,12 @@ layout: default
 {% endfor %}
 </ul>
 
+<h2>Upcoming Fixtures</h2>
 <ul>
-{% for fixture in site.fixtures %}
+{% assign upcoming = site.fixtures | sort: 'match-date' | where: 'status', 'Upcoming' %}
+{% for fixture in upcoming %}
 <li>
-  <a href="{{ fixture.url }}">{{ fixture.title }}</a>
+  <a href="{{ fixture.url }}">{{ fixture.match-date }} {{ fixture.title }}</a>
 </li>
 {% endfor %}
 </ul>
