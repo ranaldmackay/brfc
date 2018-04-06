@@ -5,9 +5,19 @@
     {% include head/fonts.html %}
   </head>
   <body>
-    <header>
+    <header role="banner">
+      <a class="toggle open" href="#nav">open</a>
       {% include headers/main-header.html %}
     </header>
-    {{ content }}
+    <nav id="nav" role="navigation">
+      <a class="toggle close" href="#">×</a>
+      {% include headers/main-nav.html %}
+    </nav>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+
+    </footer>
   </body>
 </html>
